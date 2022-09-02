@@ -1,0 +1,40 @@
+amount_due = float(input("Enter amount due:"))
+amount_to_pay = float(input("Enter amount to pay:"))
+
+Amount_to_change = amount_to_pay - amount_due
+print(f'Total Change:{round(Amount_to_change,2)}')
+print("-------------------------------------------")
+change = int((amount_to_pay - amount_due) * 100)
+
+# DOLLARS
+dollars = change // 100
+change = change % 100
+
+# HAlF DOLLARS
+half_dollars = change // 50
+change = change % 50
+
+# QUARTERS
+quarters = change // 25
+change = change % 25
+
+# DIMES
+dimes = change // 10
+change = change % 10
+
+# NICKELS
+nickels = change // 5
+change = change % 5
+
+#PENNIES
+pennies = change
+
+# OUTPUT CONVERSION
+
+
+print(f'Dollar:{dollars}')
+print(f'Half dollar:{half_dollars}')
+print(f'Quarters:{quarters}')
+print(f'Dimes:{dimes}')
+print(f'Nickels:{nickels}')
+print(f'Pennies:{pennies}')
