@@ -1,10 +1,12 @@
+
+
 amount_due = float(input("Enter amount due:"))
 amount_to_pay = float(input("Enter amount to pay:"))
 
 Amount_to_change = amount_to_pay - amount_due
 print(f'Total Change:{round(Amount_to_change,2)}')
 print("-------------------------------------------")
-change = int((amount_to_pay - amount_due) * 100)
+change = int(round(Amount_to_change,2) * 100)
 
 # DOLLARS
 dollars = change // 100
